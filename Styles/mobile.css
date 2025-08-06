@@ -19,7 +19,7 @@
 
   .button-container {
     justify-content: flex-end; /* Align the buttons to the right */
-    width: 60%;
+    width: 65%;
     gap: 5px;
     margin-left: 100px;
     background: red; 
