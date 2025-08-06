@@ -21,8 +21,12 @@
     justify-content: flex-end; /* Align the buttons to the right */
     width: 65%;
     gap: 5px;
+<<<<<<< Updated upstream
     margin-left: 40px;
   /*  background: red; */
+=======
+    margin-left: 10%;
+>>>>>>> Stashed changes
     height:5vh;
   }
 
