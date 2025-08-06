@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/Web.css">
+  <link rel="stylesheet" href="/Styles/mobile.css">
+  <title>Header Design</title>
+</head>
+<body>
+  <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-left">
+        <span>January 01, 2018</span>
+      </div>
+      <div class="top-right">
+      <span class="notification">
+        <img src="/Resources/Images/notif.png" alt="Notification Logo" class="notif-logo">
+        <span class="text">Notification</span> <!-- Wrap text inside a span for easier control -->
+        </span>
+        <span class="inquiry">
+        <img src="/Resources/Images/email.png" alt="Inquiry Logo" class="mail-logo" >
+        <span class="text">Inquiry</span> <!-- Wrap text inside a span for easier control -->
+      </span>
+
+        <div class="button-container">
+            <a href="#" class="signup">Sign Up</a>
+            <span class="divider">|</span>
+            <a href="#" class="login">Login</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Header 
+    <div class="main-header">
+      <div class="logo">
+        <img src="logo.png" alt="Thurston Logo" />
+        <h1>Thurston Software Solutions, Inc.</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon" id="menu-icon">
+        &#9776;
+      </div>
+    </div>
+  </header>-->
+
+  <script>
+    document.getElementById("menu-icon").addEventListener("click", function() {
+      this.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
