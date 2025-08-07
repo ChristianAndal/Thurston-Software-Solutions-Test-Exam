@@ -54,27 +54,54 @@
       </ul>
     </nav>
   </div>
-
   </header>
+  <main>
+ <!-- box 1 -->
+    <div class="box-1-contents-container">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('image1.jpg');">
+                <!-- Centered text and button for the first slide -->
+                <div class="text-content">
+                    <h1>We Provide Proper IT Solutions</h1>
+                    <p>Optimize systems using our years of experience</p>
+                    <button class="cta-button">Read More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <!-- Centered text and button for the second slide -->
+                <div class="text-content">
+                    <h1>IT Solutions for Modern Businesses</h1>
+                    <p>Building scalable and reliable IT systems</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('image3.jpg');">
+                <!-- Centered text and button for the third slide -->
+                <div class="text-content">
+                    <h1>Cutting-edge Technology</h1>
+                    <p>Implementing innovative IT solutions</p>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </div>
 
-  <script>
-   // Get the elements
-// Get the elements
-const menuToggle = document.getElementById('mobile-menu');
-const navList = document.querySelector('.nav-list');
+            <!-- Navigation Arrows -->
+            <div class="prev-btn" onclick="prevSlide()">&#10094;</div>
+            <div class="next-btn" onclick="nextSlide()">&#10095;</div>
 
-// Add event listener to toggle the menu
-menuToggle.addEventListener('click', () => {
-  navList.classList.toggle('active');
-});
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- box 1 end -->
 
-// Close menu if clicking outside
-document.addEventListener('click', (e) => {
-  if (!navList.contains(e.target) && !menuToggle.contains(e.target)) {
-    navList.classList.remove('active');
-  }
-});
 
-  </script>
+ </main>
+  <script src="/Script/heading.js"></script>
+  <script src="/Script/box1.js"></script>
+
 </body>
 </html>
