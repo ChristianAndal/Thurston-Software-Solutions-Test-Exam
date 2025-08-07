@@ -154,5 +154,23 @@
         width: 90%; /* Ensure each service item takes almost full width */
         margin: 0 auto; /* Center items */
     }
+    
+.service-header h1 {
+   font-family: 'Meltix', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #032A89;
+    margin-bottom: 10px; /* Adds some space between the title and the line */
+}
+
+.service-header::after {
+    content: "";
+    display: block;
+    width: 60%; /* Adjust the width of the line */
+    height: 2px; /* Line thickness */
+    background-color: #999997; /* Line color */
+    margin: 0 auto; /* Center the line */
+    margin-top: 10px; /* Space between title and line */
+}
 }
 
