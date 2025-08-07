@@ -141,10 +141,12 @@ nav ul li a:hover {
 }
 
 .menu-toggle .bar {
+
   width: 30px;
   height: 4px;
   margin: 5px 0;
   background-color: black;
+  margin-right: 30px;
 }
 
 /* box 1 */
