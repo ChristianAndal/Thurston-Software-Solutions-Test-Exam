@@ -541,7 +541,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 /* Pop-up animation */
-@keyframes popUp {
+@keyframes teampopUp {
     0% {
         opacity: 0;
         transform: translateY(20px); /* Starting position: 20px below */
@@ -552,6 +552,7 @@ nav ul li a:hover {
     }
 }
 
+/* Add the pop-up animation */
 .team-member.pop-up {
-    animation: popUp 0.8s ease-out; /* Add the pop-up animation */
+    animation: teampopUp 0.8s ease-out; /* Add the pop-up animation */
 }
