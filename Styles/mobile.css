@@ -172,5 +172,53 @@
     margin: 0 auto; /* Center the line */
     margin-top: 10px; /* Space between title and line */
 }
+
+
+/* box 3 */
+.box-3-contents-container {
+ width: 100%;
+ height: 50vh;
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Center team-member items */
+/* Initially hide the team members */
+.team-member {
+  display: none; /* Hide team members initially */
+  width: 90%; /* Make team members take up 90% of the screen width */
+  margin: 10px 0; /* Adjust spacing */
+  opacity: 0;
+  transform: translateY(20px); /* Move them slightly down initially */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.team-member:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Show only the active team member */
+.team-member.active {
+  display: block; /* Only show the active member */
+  opacity: 1;
+  visibility: visible; /* Make the active member visible */
+  transform: translateY(0); /* Reset position for smooth upward motion */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Apply transition */
+}
+
+/* Ensure visibility transition happens immediately */
+.team-member.active {
+  visibility: visible;
+}
+
+
+
+.team-dots{
+  display: none;
+}
+
+}
