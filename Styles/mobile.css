@@ -1,8 +1,9 @@
 @media (max-width: 768px) {
   .top-bar {
-    flex-direction: column; /* Stack the elements vertically on smaller screens */
-    align-items: center; /* Center-align the elements */
+    display: flex;
+    width: 100%;
     height: 10vh;
+    padding: 0%;
   }
 
   .top-left {
@@ -13,16 +14,17 @@
     width: 100%;
     text-align: center;
     gap: 10px;
-    margin-top: 10px;
-    margin-right: 35px;
+    padding: 0%;
+    background: green;
+    padding-left: 2%;
   }
 
   .button-container {
     justify-content: flex-end; /* Align the buttons to the right */
-    width: 65%;
-    gap: 5px;
-    margin-left: 20px;
-  background: red; 
+    width: 50%;
+    gap: 3px;
+    margin-left: 25%;
+    background: red; 
     height:5vh;
   }
 
@@ -30,17 +32,18 @@
     width: 40%; /* Make the buttons full width */
     align-items: left;
     font-size: 20px;
-     padding: 3px 3px;
+    padding: 3px 3px;
   }
   .notif-logo{
     width: 25px; 
     height: 25px; 
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 0%;
+    margin-left: -20%;
   }
   .mail-logo{
      width: 25px; 
     height: 20px;
+     margin-left: 30%;
   }
 .notification .text, .inquiry .text {
     display: none; /* Hide the text on mobile */

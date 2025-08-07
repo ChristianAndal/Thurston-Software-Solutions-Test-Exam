@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Meltix', sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -24,7 +24,8 @@ body {
  
 }
 .top-left span {
-
+font-family: 'Meltix', sans-serif;
+  
   margin-left: 20%;
   font-size: 14px;
 
