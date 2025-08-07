@@ -79,6 +79,7 @@
 
   .menu-toggle {
     display: flex; /* Show burger icon on mobile */
+   
   }
 
   .nav-list.active {
