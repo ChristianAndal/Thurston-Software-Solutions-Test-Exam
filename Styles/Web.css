@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Meltix', sans-serif;
@@ -386,19 +389,36 @@ nav ul li a:hover {
     font-size: 14px;
     margin-top: 10px;
 }
+/* Initially hide the service items */
+.service-item.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
 
-/* Mobile-First Approach */
-@media (max-width: 768px) {
-    .box-2-contents-container {
-        grid-template-columns: 1fr; /* Single column for mobile view */
-    }
+/* Animation when the item comes into view */
+.service-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s ease-out forwards;  /* Apply the animation */
+}
 
-    .service-header {
-        grid-column: span 1; /* Header spans only one column in mobile view */
+/* Optional: Define the keyframes for the pop-up effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    .service-item {
-        width: 90%; /* Ensure each service item takes almost full width */
-        margin: 0 auto; /* Center items */
-    }
+
+/* box 3 */
+.box-3-contents-container{
+  width: 100%;
+  height: 50vh;
+  background: #032A89;
 }

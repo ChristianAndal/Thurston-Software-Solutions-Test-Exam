@@ -142,5 +142,17 @@
  .service-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
   }
+    .box-2-contents-container {
+        grid-template-columns: 1fr; /* Single column for mobile view */
+    }
+
+    .service-header {
+        grid-column: span 1; /* Header spans only one column in mobile view */
+    }
+
+    .service-item {
+        width: 90%; /* Ensure each service item takes almost full width */
+        margin: 0 auto; /* Center items */
+    }
 }
 
