@@ -59,8 +59,14 @@
 .main-header{
  width: 100%;
  padding-left: 30%;
+ display: flex;
+ height: auto;
+}
+.logo {
+  position: relative; /* Make sure the parent container has relative positioning */
 }
 .logo img {
+
  height: 50px;
  width: auto;
  margin: 0;
