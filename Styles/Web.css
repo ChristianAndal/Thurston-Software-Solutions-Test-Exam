@@ -94,7 +94,7 @@ a {
 /* Main Header Styling */
 .main-header {
   display: flex;
-  justify-content: flex-start; /* Aligns content to the left */
+  justify-content: center; /* Aligns content to the left */
   align-items: center;
   padding: 20px 50px;
   background-color: white;
@@ -106,13 +106,13 @@ a {
 .logo img {
   height: 40px;
   width: auto;
-  margin-left: 55%;
+  margin-left: 0%;
 
 }
 
 nav {
   font-family: 'Meltix', sans-serif;
-  margin-left: 32%; 
+  margin-left: 25%; 
 }
 
 
@@ -140,13 +140,7 @@ nav ul li a:hover {
   padding: 5px;
 }
 
-.menu-toggle .bar {
-  width: 30px;
-  height: 4px;
-  margin: 5px 0;
-  background-color: black;
 
-}
 
 /* box 1 */
 .box-1-contents-container {

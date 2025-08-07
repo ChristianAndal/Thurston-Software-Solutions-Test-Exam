@@ -58,8 +58,8 @@
 /* main header*/
 .main-header{
  width: 100%;
- padding-left: 20%;
-  }
+ padding-left: 30%;
+}
 .logo img {
  height: 50px;
  width: auto;
@@ -88,6 +88,16 @@
   display: block; /
   }
 
+
+
+.menu-toggle .bar {
+  width: 35px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: black;
+ 
+
+}
 
   /* box 1  */
   .box-1-contents-container {
