@@ -76,4 +76,7 @@ window.addEventListener('load', () => {
     // Set the first slide as active
     slides[0].classList.add('active');
     dots[0].classList.add('active');
+
+    // Set interval to change the slide every 6 seconds
+    setInterval(nextSlide, 5000); // 6000 milliseconds = 6 seconds
 });

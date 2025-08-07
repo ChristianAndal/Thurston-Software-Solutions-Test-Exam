@@ -227,7 +227,7 @@ nav ul li a:hover {
     cursor: pointer;
     background-color: transparent; 
     border: 1px solid white; 
-    width: 30%;
+    width: 20%;
 }
 
 /* Pop-Up Animation */
@@ -248,7 +248,7 @@ nav ul li a:hover {
 
 /*animation */
 .text-content.pop-up {
-    animation: popUp 0.9s ease-out;
+    animation: popUp 1.5s ease-out;
     opacity: 1; 
 }
 
@@ -346,7 +346,7 @@ nav ul li a:hover {
     display: block;
     width: 20%; /* Adjust the width of the line */
     height: 2px; /* Line thickness */
-    background-color: #3b3939; /* Line color */
+    background-color:  #999997; /* Line color */
     margin: 0 auto; /* Center the line */
     margin-top: 10px; /* Space between title and line */
 }
