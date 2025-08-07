@@ -122,6 +122,9 @@
     border: 1.5px solid white; 
     width: 50%;
 }
-
+/* box 2 */
+ .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
 }
 

@@ -313,3 +313,82 @@ nav ul li a:hover {
     background-color: #00cc00; 
     border: 2px solid #00cc00; 
 }
+
+/* box 2 */
+
+.box-2-contents-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-header {
+    grid-column: span 3; /* Make header span across all 3 columns */
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.service-header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    min-height: 250px; /* Ensures all cards have the same height */
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Adds a hover effect */
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    color: #007bff;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Mobile-First Approach */
+@media (max-width: 768px) {
+    .box-2-contents-container {
+        grid-template-columns: 1fr; /* Single column for mobile view */
+    }
+
+    .service-header {
+        grid-column: span 1; /* Header spans only one column in mobile view */
+    }
+
+    .service-item {
+        width: 90%; /* Ensure each service item takes almost full width */
+        margin: 0 auto; /* Center items */
+    }
+}
