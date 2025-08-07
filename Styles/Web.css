@@ -417,6 +417,7 @@ nav ul li a:hover {
 
 
 /* box 3 */
+<<<<<<< HEAD
 .box-3-contents-container {
     width: 100%;
 }
@@ -555,4 +556,10 @@ nav ul li a:hover {
 /* Add the pop-up animation */
 .team-member.pop-up {
     animation: teampopUp 0.8s ease-out; /* Add the pop-up animation */
+=======
+.box-3-contents-container{
+  width: 100%;
+  height: 50vh;
+  background: #032A89;
+>>>>>>> parent of 0909219 (box 3 animation)
 }

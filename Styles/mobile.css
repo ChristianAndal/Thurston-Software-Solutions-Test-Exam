@@ -172,19 +172,9 @@
     margin: 0 auto; /* Center the line */
     margin-top: 10px; /* Space between title and line */
 }
-
-
-/* box 3 */
-.box-3-contents-container {
- width: 100%;
- height: 50vh;
-}
-.team-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
+<<<<<<< HEAD
 /* Center team-member items */
 .team-member {
   display: none; /* Hide team members initially */
@@ -210,3 +200,5 @@
 }
 
 }
+=======
+>>>>>>> parent of 0909219 (box 3 animation)
