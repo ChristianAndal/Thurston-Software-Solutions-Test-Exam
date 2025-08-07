@@ -21,7 +21,7 @@
 
   .button-container {
     justify-content: flex-end; /* Align the buttons to the right */
-    width: 50%;
+    width: 60%;
     gap: 3px;
     margin-left: 25%;
     background: red; 
@@ -29,7 +29,7 @@
   }
 
   .top-right a {
-    width: 50%; /* Make the buttons full width */
+    width: 60%; /* Make the buttons full width */
     align-items: left;
     font-size: 20px;
     padding: 3px 3px;
@@ -38,7 +38,7 @@
     width: 25px; 
     height: 25px; 
     margin: 0%;
-    margin-left: -20%;
+    margin-left: 20%;
   }
   .mail-logo{
      width: 25px; 
