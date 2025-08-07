@@ -1,4 +1,4 @@
-@media (max-width: 768px) and (orientation: landscape)  {
+@media (max-width: 768px)   {
   * {
   margin: 0;
   padding: 0;
@@ -172,11 +172,6 @@
     margin: 0 auto; /* Center the line */
     margin-top: 10px; /* Space between title and line */
 }
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 /* box 3 */
 .box-3-contents-container {
@@ -189,7 +184,7 @@
   align-items: center;
 }
 
->>>>>>> parent of da830fa (uop)
+
 /* Center team-member items */
 .team-member {
   display: none; /* Hide team members initially */
@@ -208,14 +203,7 @@
    transform: translateY(0); /* Reset position for smooth upward motion */
   transition: opacity 1.5s ease-in-out, visibility 0s linear 0s, transform 1.5s ease-in-out; /* Apply transition */
 }
-
-
-
-
 .team-dots{
   display: none;
 }
-
 }
-=======
->>>>>>> parent of 0909219 (box 3 animation)

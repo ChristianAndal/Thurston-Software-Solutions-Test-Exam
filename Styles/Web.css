@@ -417,7 +417,6 @@ nav ul li a:hover {
 
 
 /* box 3 */
-<<<<<<< HEAD
 .box-3-contents-container {
     width: 100%;
 }
@@ -540,19 +539,4 @@ nav ul li a:hover {
 .team-container h2 {
     font-size: 36px;
     margin-bottom: 40px;
-}
-/* Pop-up animation */
-@keyframes popUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Starting position: 20px below */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* Final position: normal */
-    }
-}
-
-.team-member.pop-up {
-    animation: teampopUp 0.8s ease-out; /* Add the pop-up animation */
 }

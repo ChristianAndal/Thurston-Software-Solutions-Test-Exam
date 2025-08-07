@@ -11,16 +11,6 @@ let currentIndex = 0;
     // Add the 'active' class to the next team member
     teamMembers[currentIndex].classList.add('active');
   }
-<<<<<<< HEAD
 
   // Change team member every 5 seconds (5000ms)
   setInterval(changeActiveMember, 5000);
-=======
-
-  // Change team member every 5 seconds (5000ms)
-  setInterval(changeActiveMember, 5000);
-
-
->>>>>>> parent of da830fa (uop)
-
-
