@@ -64,6 +64,7 @@
 }
 .logo {
   position: relative; /* Make sure the parent container has relative positioning */
+  justify-items: left;
 }
 .logo img {
 
@@ -159,8 +160,18 @@
     .service-item {
         width: 90%; /* Ensure each service item takes almost full width */
         margin: 0 auto; /* Center items */
+         min-height: 150px;
+           padding: 10px;
     }
-    
+    .service-item img {
+    width: 100px;
+    height: 100px;
+
+    }
+
+    .service-item p {
+   display: none;
+}
 .service-header h1 {
    font-family: 'Meltix', sans-serif;
     font-weight: normal;
