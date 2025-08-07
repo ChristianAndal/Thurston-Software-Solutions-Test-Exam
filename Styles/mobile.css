@@ -49,4 +49,39 @@
     display: none; /* Hide the text on mobile */
   }
   
+
+  /* main header*/
+  .main-header{
+    width: 100%;
+  }
+  .logo img {
+  height: 50px;
+  width: auto;
+ margin: 0;
+ margin-left: -20%;
+
+}
+   .nav-list {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-toggle {
+    display: flex; /* Show burger icon on mobile */
+  }
+
+  .nav-list.active {
+    display: block; /* Show menu when burger is clicked */
+  }
 }

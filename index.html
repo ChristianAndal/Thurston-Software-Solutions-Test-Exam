@@ -25,7 +25,6 @@
         <img src="/Resources/Images/email.png" alt="Inquiry Logo" class="mail-logo" >
         <span class="text">Inquiry</span> <!-- Wrap text inside a span for easier control -->
       </span>
-
         <div class="button-container">
             <a href="#" class="signup">Sign Up</a>
             <span class="divider">|</span>
@@ -35,31 +34,39 @@
       </div>
     </div>
 
-    <!-- Main Header 
-    <div class="main-header">
-      <div class="logo">
-        <img src="logo.png" alt="Thurston Logo" />
-        <h1>Thurston Software Solutions, Inc.</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </nav>
-      <div class="menu-icon" id="menu-icon">
-        &#9776;
-      </div>
+    <!-- Main Header -->
+   <div class="main-header">
+    <div class="logo">
+      <img src="/Resources/Images/logo.jpeg" alt="Thurston Logo" />
     </div>
-  </header>-->
+    <nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  </header>
 
   <script>
-    document.getElementById("menu-icon").addEventListener("click", function() {
-      this.classList.toggle("active");
-    });
+   // Get the elements
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+// Add event listener to toggle the menu
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+
   </script>
 </body>
 </html>
