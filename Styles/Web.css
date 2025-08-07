@@ -570,3 +570,156 @@ nav ul li a:hover {
     transform: translateY(0); /* Reset position */
     animation-name: uniquePopUp; /* Use the unique pop-up animation */
 }
+
+/* box 4 */
+
+.box-4-contents-container {
+  background-color: #f0f4f8;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.contact-heading {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-heading h2 {
+  font-size: 2.5rem;
+  color: #2a2a2a;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #032A89;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.map iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+/* Mobile responsiveness */
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .box-4-contents-container {
+    width: 100%;
+    padding: 0; /* Remove any padding around the container */
+    margin: 0; /* Remove margins */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks children vertically */
+    min-height: 100vh; /* Ensure container takes full height of the viewport */
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr; /* Stacks form and map vertically */
+    gap: 20px;
+    width: 100%; /* Ensure full width */
+    padding: 0;
+  }
+
+  .map-container {
+    order: -1; /* Moves the map to the top */
+    width: 100%; /* Full width map */
+    background-color: #f0f4f8;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: -30%;
+  }
+
+  .contact-heading h2 {
+    order: -2; /* Moves the map to the top */
+    font-size: 2rem;
+    margin-top: -110%; /* Remove unnecessary margins */
+    width: 100%; /* Full width heading */
+    text-align: center; /* Center the heading */
+    z-index: 16;
+  }
+
+  .contact-form {
+    padding: 20px;
+    width: 100%; /* Full width form */
+    margin-top: 10px; /* Added margin for spacing */
+    margin-left: 10px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 14px;
+    width: 100%; /* Ensure button takes full width */
+  }
+}
