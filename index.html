@@ -14,7 +14,7 @@
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="top-left">
-        <span>January 01, 2018</span>
+       <span id="current-date"></span>
       </div>
       <div class="top-right">
       <span class="notification">
@@ -59,28 +59,32 @@
  <!-- box 1 -->
     <div class="box-1-contents-container">
         <div class="slider-container">
-            <div class="slide active" style="background-image: url('image1.jpg');">
+            <div class="slide active" style="background-image: url('/Resources/Images/bg-1.jpeg');">
                 <!-- Centered text and button for the first slide -->
                 <div class="text-content">
-                    <h1>We Provide Proper IT Solutions</h1>
+                    <h1>We Provide Proper <span class="green-text">IT Solutions</span></h1>
                     <p>Optimize systems using our years of experience</p>
                     <button class="cta-button">Read More</button>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('image2.jpg');">
+            <div class="slide" style="background-image: url('/Resources/Images/bg-2.jpeg');">
                 <!-- Centered text and button for the second slide -->
                 <div class="text-content">
-                    <h1>IT Solutions for Modern Businesses</h1>
-                    <p>Building scalable and reliable IT systems</p>
-                    <button class="cta-button">Learn More</button>
+                    <h1>It’s all about the applications</h1>
+                    <p>Whether it’s a multifaceted enterprise business platform, solution, or app, our programs’ insightful design and seamless functionality will help create a smooth experience that you and your users will appreciate interacting with.</p>
+                    
                 </div>
             </div>
-            <div class="slide" style="background-image: url('image3.jpg');">
+            <div class="slide" style="background-image: url('/Resources/Images/bg-3.jpeg');">
                 <!-- Centered text and button for the third slide -->
                 <div class="text-content">
-                    <h1>Cutting-edge Technology</h1>
-                    <p>Implementing innovative IT solutions</p>
-                    <button class="cta-button">Get Started</button>
+                    <h1>We offer powerful collaboration between the client and our team</h1> 
+                </div>
+            </div>
+              <div class="slide" style="background-image: url('/Resources/Images/bg-4.jpeg');">
+                <!-- Centered text and button for the third slide -->
+                <div class="text-content">
+                    <h1>We redefine, redesign, and remodel your business using the latest technology available</h1> 
                 </div>
             </div>
 
@@ -93,6 +97,7 @@
                 <span class="dot active" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </div>

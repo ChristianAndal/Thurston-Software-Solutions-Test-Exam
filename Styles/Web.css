@@ -190,8 +190,13 @@ nav ul li a:hover {
 }
 
 .text-content h1 {
-    font-size: 3rem;
+    font-family: 'Meltix', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
     margin-bottom: 20px;
+}
+.green-text{
+  color:green ;
 }
 
 .text-content p {
@@ -211,6 +216,51 @@ nav ul li a:hover {
 .cta-button:hover {
     background-color: darkgreen;
 }
+/* Pop-Up Animation */
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5); /* Start small and invisible */
+    }
+    50% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.1); /* Expand slightly */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1); /* Final state */
+    }
+}
+
+/* Apply animation to text content */
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    opacity: 0; /* Initially invisible */
+}
+
+/* Pop-up animation applied to text content */
+.text-content.pop-up {
+    animation: popUp 0.9s ease-out;
+    opacity: 1; /* Ensure text is visible after animation */
+}
+
+@keyframes popUp {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
 
 /* Arrow Button Styling */
 .prev-btn, .next-btn {
