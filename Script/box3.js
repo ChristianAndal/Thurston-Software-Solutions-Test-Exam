@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         teamMembers[currentIndex].classList.add('active');
     }
 
-    setInterval(changeActiveMember, 5000);
+    setInterval(changeActiveMember, 7000);
 
     // Function to check if the element is in view
     function isElementInView(element) {
