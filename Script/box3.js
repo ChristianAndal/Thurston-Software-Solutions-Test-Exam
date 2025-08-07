@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = document.querySelectorAll('.team-member');
     let currentIndex = 0;
+    let lastScrollTop = 0;  // Variable to track the last scroll position
 
     // Function to change active team member every 5 seconds
     function changeActiveMember() {
@@ -24,22 +25,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to handle scroll event and add 'visible' class when element is in view
     function handleScroll() {
-        // Loop through all team members and trigger the animation when one of them is in view
         let shouldAnimate = false;
         
-        teamMembers.forEach((member) => {
-            if (isElementInView(member)) {
-                shouldAnimate = true;  // Once any team member is in view, trigger the animation
-            }
-        });
+        // Get the current scroll position
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        // If any team member is in view, apply the 'visible' class to all team members
-        if (shouldAnimate) {
+        // Check if scrolling down (currentScrollTop > lastScrollTop means scrolling down)
+        if (currentScrollTop > lastScrollTop) {
+            // Loop through all team members and trigger the animation when one of them is in view
             teamMembers.forEach((member) => {
-                // Add the 'visible' class to each team member
-                member.classList.add('visible');
+                if (isElementInView(member)) {
+                    shouldAnimate = true;  // Once any team member is in view, trigger the animation
+                }
             });
+
+            // If any team member is in view, apply the 'visible' class to all team members
+            if (shouldAnimate) {
+                teamMembers.forEach((member) => {
+                    // Reset animation and trigger it again by removing and adding the 'visible' class
+                    member.classList.remove('visible');
+                    setTimeout(() => {
+                        member.classList.add('visible');
+                    }, 50); // Small delay to reset the animation
+                });
+            }
         }
+
+        // Update last scroll position
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+
     }
 
     // Listen for scroll events
