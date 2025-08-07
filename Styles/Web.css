@@ -106,13 +106,13 @@ a {
 .logo img {
   height: 40px;
   width: auto;
-  margin-left: 45%;
+  margin-left: 55%;
 
 }
 
 nav {
   font-family: 'Meltix', sans-serif;
-  margin-left: 28%; 
+  margin-left: 32%; 
 }
 
 
@@ -233,9 +233,6 @@ nav ul li a:hover {
     width: 30%;
 }
 
-
-
-
 /* Pop-Up Animation */
 @keyframes popUp {
     0% {
@@ -325,32 +322,44 @@ nav ul li a:hover {
     box-sizing: border-box;
     overflow: hidden;
     margin:0;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: #fff;
 }
-
 .service-header {
     grid-column: span 3; /* Make header span across all 3 columns */
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: -5%;
+  
 }
 
 .service-header h1 {
+   font-family: 'Meltix', sans-serif;
+    font-weight: normal;
     font-size: 2.5rem;
-    color: #007bff;
+    color: #032A89;
+    margin-bottom: 10px; /* Adds some space between the title and the line */
+}
+
+.service-header::after {
+    content: "";
+    display: block;
+    width: 20%; /* Adjust the width of the line */
+    height: 2px; /* Line thickness */
+    background-color: #3b3939; /* Line color */
+    margin: 0 auto; /* Center the line */
+    margin-top: 10px; /* Space between title and line */
 }
 
 .service-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     min-height: 250px; /* Ensures all cards have the same height */
@@ -359,16 +368,21 @@ nav ul li a:hover {
 
 .service-item:hover {
     transform: translateY(-10px); /* Adds a hover effect */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
 }
 
+
 .service-item img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
 }
 
 .service-item h3 {
-    color: #007bff;
+    font-family: 'Meltix', sans-serif;
+    font-weight: normal;
+    color: #000000;
     margin-top: 10px;
     font-size: 1.2rem;
 }
