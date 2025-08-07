@@ -63,7 +63,7 @@ font-family: 'Meltix', sans-serif;
 }
 
 .top-right a:hover {
-  background-color: #0056b3;
+  background-color: #00cc00;
 }
 .button-container {
   display: flex;
@@ -129,7 +129,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: #00cc00;
 }
 
 /* Burger Menu (Mobile) */
@@ -141,7 +141,7 @@ nav ul li a:hover {
 }
 
 .menu-toggle .bar {
-  width: 25px;
+  width: 35px;
   height: 4px;
   margin: 5px 0;
   background-color: black;
@@ -151,7 +151,6 @@ nav ul li a:hover {
 .box-1-contents-container {
     width: 100%;
     height: 81vh;
-    background: red;
     position: relative;
 }
 
@@ -180,95 +179,98 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    backdrop-filter: blur(1px); /* Apply blur */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(1px); 
     z-index: 1;
 }
 
-/* Active slide styling */
+/* slide */
 .slide.active {
     display: block;
     opacity: 1;
 }
 
-/* Centered Text and Button Styling */
+
 .text-content {
     position: absolute;
+    width: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
-    z-index: 2; /* Ensure text is above the overlay */
+     font-family: 'Meltix', sans-serif;
+    z-index: 2; 
 }
 
 .text-content h1 {
     font-family: 'Meltix', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
+    font-weight: normal;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .green-text {
-    color: green;
+    color: #00cc00;
 }
 
 .text-content p {
-    font-size: 1.5rem;
+    font-family: 'Meltix', sans-serif;
+    font-weight: normal;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
-.cta-button {
+.readmore-button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: green;
     color: white;
     border: none;
     cursor: pointer;
+    background-color: transparent; 
+    border: 1px solid white; 
+    width: 30%;
 }
 
-.cta-button:hover {
-    background-color: darkgreen;
-}
+
+
 
 /* Pop-Up Animation */
 @keyframes popUp {
     0% {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0); /* Start small and invisible */
+        transform: translate(-50%, -50%) scale(0); 
     }
     50% {
         opacity: 0.8;
-        transform: translate(-50%, -50%) scale(1.1); /* Expand slightly */
+        transform: translate(-50%, -50%) scale(1.1); 
     }
     100% {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1); /* Final state */
+        transform: translate(-50%, -50%) scale(1); 
     }
 }
 
-/* Apply animation to text content */
+/*animation */
 .text-content.pop-up {
     animation: popUp 0.9s ease-out;
-    opacity: 1; /* Ensure text is visible after animation */
+    opacity: 1; 
 }
 
-/* Arrow Button Styling */
+/* Arrow Button  */
 .prev-btn, .next-btn {
     position: absolute;
     top: 50%;
     z-index: 10;
     font-size: 30px;
     color: white;
-    background-color: transparent; /* Transparent inside */
-    border: 2px solid white; /* White border for outline */
-    padding: 10px;
+    background-color: transparent; 
+    border: 1px solid white; 
     cursor: pointer;
-    border-radius: 50%; /* Ensures it's round */
+    border-radius: 50%; 
     transform: translateY(-50%);
-    width: 50px; /* Set width and height to make it round */
-    height: 50px; /* Set height and width to be equal */
+    width: 50px; 
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,15 +292,16 @@ nav ul li a:hover {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
-/* Default Dot Style */
+/* Dot Style */
 .dot {
     width: 12px;
     height: 12px;
     margin: 0 5px;
-    background-color: transparent; /* Transparent background for non-active dots */
-    border: 2px solid white; /* White border to create the ring effect */
+    background-color: transparent; 
+    border: 1px solid white; 
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
@@ -306,6 +309,6 @@ nav ul li a:hover {
 
 /* Active Dot Style */
 .dot.active {
-    background-color: green; /* Green color for active dot */
-    border: 2px solid green; /* Same green color for border */
+    background-color: #00cc00; 
+    border: 2px solid #00cc00; 
 }
