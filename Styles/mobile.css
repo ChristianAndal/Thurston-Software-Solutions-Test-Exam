@@ -23,13 +23,13 @@
     justify-content: flex-end; /* Align the buttons to the right */
     width: 50%;
     gap: 3px;
-    margin-left: 25%;
+    margin-left: 20%;
     background: red; 
     height:5vh;
   }
 
   .top-right a {
-    width: 40%; /* Make the buttons full width */
+    width: 50%; /* Make the buttons full width */
     align-items: left;
     font-size: 20px;
     padding: 3px 3px;
