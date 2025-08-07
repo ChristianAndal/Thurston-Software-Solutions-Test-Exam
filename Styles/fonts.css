@@ -13,26 +13,26 @@
 
 @font-face {
   font-family: 'Meltix';
-  src: url('Resoueces/Fonts/meltix/Meltix_Italic_Demo.otf') format('opentype');
+  src: url('Resources/Fonts/meltix/Meltix_Italic_Demo.otf') format('opentype');
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Meltix';
-  src: url('Resoueces/Fonts/meltix/Meltix_Bold_italic_Demo.otf') format('opentype');
+  src: url('Resources/Fonts/meltix/Meltix_Bold_italic_Demo.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Meltix';
-  src: url('Resoueces/Fonts/meltix/Meltix_Light_Demo.otf') format('opentype');
+  src: url('Resources/Fonts/meltix/Meltix_Light_Demo.otf') format('opentype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'Meltix';
-  src: url('Resoueces/Fonts/meltix/Meltix_Light_Italic_Demo.otf') format('opentype');
+  src: url('Resources/Fonts/meltix/Meltix_Light_Italic_Demo.otf') format('opentype');
   font-weight: lighter;
   font-style: italic;
 }
