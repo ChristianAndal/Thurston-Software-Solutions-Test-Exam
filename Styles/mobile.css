@@ -193,13 +193,13 @@
 /* box 3 */
 .box-3-contents-container {
  width: 100%;
- height: 75vh;
+ height: 65%;
 }
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-   height: 75vh;
+   height: 65%;
  
 }
 
