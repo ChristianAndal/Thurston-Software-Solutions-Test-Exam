@@ -2,19 +2,19 @@
     /* box 3 */
 .box-3-contents-container {
  width: 100%;
- height: 160vh;
+ height: 150vh;
 }
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-   height: 160vh;
+   height: 150vh;
  
 }
   /* box 1  */
   .box-1-contents-container {
     width: 100%;
-    height: 160vh;
+    height: 150vh;
    
 }
 
