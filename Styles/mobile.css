@@ -286,11 +286,12 @@
   }
 
   .social-icon img {
-    width: 20px; 
+    width: 30px; 
   }
 
   .footer p {
-    font-size: 12px; 
+    font-size: 18px; 
     margin-top: 10px; 
+    margin-bottom: 10px;
   }
 }
