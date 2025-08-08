@@ -193,26 +193,26 @@
 /* box 3 */
 .box-3-contents-container {
  width: 100%;
- height: 65%;
+ height: 70%;
 }
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-   height: 65%;
+   height: 70%;
  
 }
 
 .team-photo {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
 }
 
 /* Center team-member items */
 .team-member {
   display: none; /* Hide team members initially */
   width: 90%; /* Make team members take up 90% of the screen width */
-  margin: 10px 0; /* Adjust spacing */
+  margin: 15px 0; /* Adjust spacing */
   opacity: 0;
   transform: translateY(20px); /* Move them slightly down initially */
   transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s, transform 1.5s ease-in-out; /* Smooth transition */
