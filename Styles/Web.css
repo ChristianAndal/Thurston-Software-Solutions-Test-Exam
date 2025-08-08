@@ -574,7 +574,7 @@ nav ul li a:hover {
 /* box 4 */
 
 .box-4-contents-container {
-  background-color: #f0f4f8;
+  background-color: #e9edf8;
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -598,23 +598,31 @@ nav ul li a:hover {
 
 .contact-heading h2 {
   font-size: 2.5rem;
-  color: #2a2a2a;
-  font-weight: bold;
+  color: #032A89;
   margin: 0;
+   font-family: 'Meltix', sans-serif;
+  font-weight: normal;
 }
 
 .contact-form {
-  background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form-heading {
+  font-family: 'Meltix', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #032A89;
+  margin-bottom: 5px;
 }
 
-.contact-form p {
+.contact-form-p {
+  font-family: 'Meltix', sans-serif;
+  font-weight: normal;
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 15px;
 }
+
 
 .contact-form .form-group {
   margin-bottom: 15px;
@@ -625,26 +633,37 @@ nav ul li a:hover {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border: 1px solid #999997;
   box-sizing: border-box;
+  font-family: 'Meltix', sans-serif;
+  font-weight: normal;
 }
 
 .contact-form textarea {
-  height: 150px;
+  color: #e9edf8;
+  height: 80px;
   resize: none;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #A3A3A3;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Meltix', sans-serif;
+    font-weight: normal;
 }
 
 .submit-btn {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   background-color: #032A89;
   color: white;
   border: none;
-  border-radius: 6px;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Meltix', sans-serif;
+  font-weight: normal;
 }
 
 .submit-btn:hover {
@@ -652,74 +671,75 @@ nav ul li a:hover {
 }
 
 .map-container {
-  background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.map-container h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 15px;
-}
+
 
 .map iframe {
   border-radius: 8px;
   width: 100%;
-  height: 300px;
+  height: 330px;
   border: none;
 }
-/* Mobile responsiveness */
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-  .box-4-contents-container {
-    width: 100%;
-    padding: 0; /* Remove any padding around the container */
-    margin: 0; /* Remove margins */
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    flex-direction: column; /* Stacks children vertically */
-    min-height: 100vh; /* Ensure container takes full height of the viewport */
+
+/* footer */
+/* footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between; /* Space the content apart */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-family: 'Meltix', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Align icons to the left */
+  gap: 15px; /* Reduced gap between icons */
+}
+
+.social-icon {
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+.social-icon img {
+  width: 25px; /* Icon size */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Media query for desktop to swap order */
+@media (min-width: 1024px) {
+  .footer .footer-content {
+    flex-direction: row-reverse; /* Swap the positions of the icons and text */
   }
 
-  .contact-container {
-    grid-template-columns: 1fr; /* Stacks form and map vertically */
-    gap: 20px;
-    width: 100%; /* Ensure full width */
-    padding: 0;
+  .social-icons {
+    justify-content: flex-end; /* Align icons to the right */
   }
 
-  .map-container {
-    order: -1; /* Moves the map to the top */
-    width: 100%; /* Full width map */
-    background-color: #f0f4f8;
-    padding: 0;
-    margin: 0;
-    margin-left: 10px;
-    margin-top: -30%;
-  }
-
-  .contact-heading h2 {
-    order: -2; /* Moves the map to the top */
-    font-size: 2rem;
-    margin-top: -110%; /* Remove unnecessary margins */
-    width: 100%; /* Full width heading */
-    text-align: center; /* Center the heading */
-    z-index: 16;
-  }
-
-  .contact-form {
-    padding: 20px;
-    width: 100%; /* Full width form */
-    margin-top: 10px; /* Added margin for spacing */
-    margin-left: 10px;
-  }
-
-  .submit-btn {
-    font-size: 1rem;
-    padding: 14px;
-    width: 100%; /* Ensure button takes full width */
+  .footer p {
+    text-align: left; /* Align text to the left */
   }
 }
