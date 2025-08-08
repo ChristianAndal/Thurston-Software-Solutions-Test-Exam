@@ -611,7 +611,7 @@ nav ul li a:hover {
   margin-bottom: 5px;
 }
 
-.contact-form-p, .contact-form-p1 {
+.contact-form-p{
   font-family: 'Meltix', sans-serif;
   font-weight: normal;
   font-size: 1.1rem;
