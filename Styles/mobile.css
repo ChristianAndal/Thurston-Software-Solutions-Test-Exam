@@ -212,12 +212,14 @@
 .team-member {
   display: none; /* Hide team members initially */
   width: 90%; /* Make team members take up 90% of the screen width */
-  margin: 15px 0; /* Adjust spacing */
+  margin: 5px 0; /* Adjust spacing */
   opacity: 0;
   transform: translateY(20px); /* Move them slightly down initially */
   transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s, transform 1.5s ease-in-out; /* Smooth transition */
 }
-
+.team-member p{
+  margin-bottom: 15px ;
+}
 /* Show only the active team member */
 .team-member.active {
   display: block; /* Only show the active member */
