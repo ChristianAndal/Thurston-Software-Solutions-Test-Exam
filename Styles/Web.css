@@ -41,7 +41,14 @@ font-family: 'Meltix', sans-serif;
   width: 50%;
  
 }
+.text {
+    transition: color 0.3s ease; 
+}
 
+.text:hover {
+    color: #00cc00; 
+    cursor: pointer; 
+}
 .top-right span, .top-right a {
   font-size: 14px;
   color: white;
