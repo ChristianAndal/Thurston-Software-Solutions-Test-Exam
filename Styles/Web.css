@@ -560,7 +560,7 @@ nav ul li a:hover {
     text-align: center;
     opacity: 0; /* Make the element invisible initially */
     transform: translateY(var(--offset, 20px)); /* Apply the custom starting position */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+    transition: opacity 1.3s ease-out, transform 1s ease-out; /* Smooth transition */
     animation: var(--popUpDuration, 0.8s) ease-out var(--uniqueDelay, 0s) forwards;
 }
 

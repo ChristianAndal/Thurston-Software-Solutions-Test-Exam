@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let lastScrollTop = 0;  // Variable to track the last scroll position
 
-    // Function to change active team member every 5 seconds
+    // Function to change active team member every 7 seconds
     function changeActiveMember() {
         // Remove the 'active' class from the current team member
         teamMembers[currentIndex].classList.remove('active');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         teamMembers[currentIndex].classList.add('active');
     }
 
-    setInterval(changeActiveMember, 7000);
+    setInterval(changeActiveMember, 7000); // Every 7 seconds
 
     // Function to check if the element is in view
     function isElementInView(element) {
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to handle scroll event and add 'visible' class when element is in view
     function handleScroll() {
         let shouldAnimate = false;
-        
+
         // Get the current scroll position
         const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Check if scrolling down (currentScrollTop > lastScrollTop means scrolling down)
+        // Trigger animation only when scrolling down and content is in view
         if (currentScrollTop > lastScrollTop) {
             // Loop through all team members and trigger the animation when one of them is in view
             teamMembers.forEach((member) => {
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update last scroll position
         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
-
     }
 
     // Listen for scroll events
