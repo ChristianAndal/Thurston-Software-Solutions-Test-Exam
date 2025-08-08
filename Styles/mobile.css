@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
   .top-bar {
     display: flex;
@@ -11,7 +10,6 @@
     height: 10vh;
     padding: 0%;
   }
-
   .top-left {
     display: none; 
   }
@@ -24,7 +22,6 @@
 
     padding-left: 2%;
   }
-
   .button-container {
     justify-content: flex-end; 
     width: 60%;
@@ -33,7 +30,6 @@
     
     height:5vh;
   }
-
   .top-right a {
     width: 60%; 
     align-items: left;
@@ -63,7 +59,7 @@
  height: auto;
 }
 .logo {
-  position: relative; /* Make sure the parent container has relative positioning */
+  position: relative; 
   justify-items: left;
 }
 .logo img {
@@ -94,23 +90,16 @@
 .nav-list.active {
   display: block; /
   }
-
-
-
 .menu-toggle .bar {
   width: 35px;
   height: 4px;
   margin: 5px 0;
   background-color: black;
- 
-
 }
-
   /* box 1  */
   .box-1-contents-container {
     width: 100%;
     height: 55vh;
-   
 }
 .dots{
   display: none;
@@ -133,7 +122,6 @@
     font-size: 1.2em;
     width: 100%;
     margin-bottom: 20%;
-
 }
 .readmore-button {
     padding: 10px 20px;
@@ -147,21 +135,21 @@
 }
 /* box 2 */
  .service-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+    grid-template-columns: repeat(2, 1fr); 
   }
     .box-2-contents-container {
-        grid-template-columns: 1fr; /* Single column for mobile view */
+        grid-template-columns: 1fr; 
     }
 
     .service-header {
-        grid-column: span 1; /* Header spans only one column in mobile view */
+        grid-column: span 1; 
     }
 
     .service-item {
-        width: 90%; /* Ensure each service item takes almost full width */
-        margin: 0 auto; /* Center items */
-         min-height: 150px;
-           padding: 10px;
+        width: 90%; 
+        margin: 0 auto; 
+        min-height: 150px;
+        padding: 10px;
     }
     .service-item img {
     width: 100px;
@@ -177,17 +165,17 @@
     font-weight: normal;
     font-size: 2rem;
     color: #032A89;
-    margin-bottom: 10px; /* Adds some space between the title and the line */
+    margin-bottom: 10px; 
 }
 
 .service-header::after {
     content: "";
     display: block;
-    width: 60%; /* Adjust the width of the line */
-    height: 2px; /* Line thickness */
-    background-color: #999997; /* Line color */
-    margin: 0 auto; /* Center the line */
-    margin-top: 10px; /* Space between title and line */
+    width: 60%; 
+    height: 2px; 
+    background-color: #999997;
+    margin: 0 auto; 
+    margin-top: 10px; 
 }
 
 /* box 3 */
@@ -207,26 +195,25 @@
     width: 180px;
     height: 180px;
 }
-
 /* Center team-member items */
 .team-member {
-  display: none; /* Hide team members initially */
-  width: 90%; /* Make team members take up 90% of the screen width */
-  margin: 5px 0; /* Adjust spacing */
+  display: none; 
+  width: 90%; 
+  margin: 5px 0; 
   opacity: 0;
-  transform: translateY(20px); /* Move them slightly down initially */
-  transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s, transform 1.5s ease-in-out; /* Smooth transition */
+  transform: translateY(20px); 
+  transition: opacity 1.5s ease-in-out, visibility 0s linear 1.5s, transform 1.5s ease-in-out; 
 }
 .team-member p{
   margin-bottom: 15px ;
 }
 /* Show only the active team member */
 .team-member.active {
-  display: block; /* Only show the active member */
+  display: block; 
   opacity: 1;
-   visibility: visible; /* Make the active member visible */
-   transform: translateY(0); /* Reset position for smooth upward motion */
-  transition: opacity 1.5s ease-in-out, visibility 0s linear 0s, transform 1.5s ease-in-out; /* Apply transition */
+   visibility: visible;
+   transform: translateY(0); 
+  transition: opacity 1.5s ease-in-out, visibility 0s linear 0s, transform 1.5s ease-in-out; 
 }
 .team-dots{
   display: none;
@@ -249,7 +236,7 @@
 
   .contact-container {
     display: flex;
-    flex-direction: column; /* Stack the form and map vertically */
+    flex-direction: column; 
     gap: 10px;
     width: 100%;
     padding: 0;
@@ -262,7 +249,7 @@
     text-align: center;
     margin-bottom: 5px;
     padding-top: 20px;
-    order: 1; /* Moves the heading last */
+    order: 1; 
   }
 .contact-form-heading {
   font-size: 1.3rem;
@@ -271,39 +258,39 @@
     width: 100%;
     padding: 10px;
     margin: 0;
-    order: 2; /* Moves the map first */
+    order: 2; 
     text-align: center;
   }
 
   .contact-form {
     padding: 20px;
     width: 100%;
-    order: 3; /* Moves the contact form second */
+    order: 3; 
     text-align: center;
   }
 
   .submit-btn {
     font-size: 1rem;
     padding: 14px;
-    width: 100%; /* Ensure button takes full width */
+    width: 100%; 
   }
   /* footer */
   .footer .footer-content {
-    flex-direction: column; /* Stack the content vertically on mobile */
-    text-align: center; /* Center text */
+    flex-direction: column; 
+    text-align: center;
   }
 
   .social-icons {
-    gap: 10px; /* Increase gap slightly on mobile */
-    margin-top: 10px; /* Space above the icons */
+    gap: 10px; 
+    margin-top: 10px; 
   }
 
   .social-icon img {
-    width: 20px; /* Reduce icon size on mobile */
+    width: 20px; 
   }
 
   .footer p {
-    font-size: 12px; /* Reduce font size for mobile */
-    margin-top: 10px; /* Space between text and footer icons */
+    font-size: 12px; 
+    margin-top: 10px; 
   }
 }
